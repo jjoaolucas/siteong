@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/donate.css">
+  <title>ONG | AUMIGOS</title>
+  <script>
+    alert('Para a realização de doações de bens materiais, entre em contato com a ONG através do e-mail:  doacao@aumigos.com.br ou pelo telefone:  (18) 99999-9999.     Muito Obrigdo!');
+  </script>
+  <script src="js/validarForm.js"></script>
+</head>
+<body>
+  <!-- ========================================NAVBAR=============================================== -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark py-3">
+
+    <a href="index.html"><img class="navbar-brand" src="img/logoong.png" width="200" height="200"
+        class="d-inline-block align-top" alt=""></a>
+    <h1 class="logo">Ong Aumigos</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">Sobre<span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Doe <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="adote.html">Adote <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contato.html">Contato <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="../voluntario.html">Seja Voluntário <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item active">
+          <!-- <a class="nav-link" href="marketplace.html">LOJA <span class="sr-only">(página atual)</span></a> -->
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Login/login.html">Logar-se <span class="sr-only">(página atual)</span></a>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========================================body=============================================== -->
+  <section>
+    <div class="container">
+      <div class="row">
+
+
+        <div class="col-md-4">
+          <h1 class="display-6 mt-5">Doe para a ONG Aumigos</h1>
+          <p class="lead">A ONG Aumigos é uma organização sem fins lucrativos que tem como objetivo ajudar animais
+            abandonados e maltratados.</p>
+        </div>
+        <div class="col-md-8 mt-5">
+
+          <form action="" onsubmit="return validarFormulario()">
+
+            <div class="row">
+
+              <div class="col">
+
+                <h3 class="title">endereço de cobrança</h3>
+
+                <div class="inputBox">
+                  <span>Nome Completo :</span>
+                  <input class="form-control" type="text" placeholder="João da Silva" id="nomeCompleto" required
+                    pattern="^[a-zA-Z\u00C0-\u00FF\s]+$" title="Nome deve conter apenas letras e espaços.">
+                </div>
+                <div class="inputBox">
+                  <span>Email :</span>
+                  <input class="form-control" type="email" placeholder="exemplo@exemplo.com" id="email" required
+                    pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Insira um e-mail válido.">
+                </div>
+                <div class="inputBox">
+                  <span>Endereço :</span>
+                  <input class="form-control" type="text" placeholder="Rua, Avenida, etc." id="endereco" required
+                    pattern="^[a-zA-Z0-9\s,.]+$" title="Insira um endereço válido.">
+                </div>
+                <div class="inputBox">
+                  <span>Cidade :</span>
+                  <input class="form-control" type="text" placeholder="São Paulo" id="cidade" required
+                    pattern="^[a-zA-Z\u00C0-\u00FF\s]+$" title="Insira uma cidade válida.">
+                </div>
+                <div class="flex">
+                  <div class="inputBox">
+                    <span>Estado :</span>
+                    <select class="form-control" id="validationDefault04" required>
+                      <option selected disabled value="">Escolha</option>
+                      <option value="AC">Acre</option>
+                      <option value="AL">Alagoas</option>
+                      <option value="AP">Amapá</option>
+                      <option value="AM">Amazonas</option>
+                      <option value="BA">Bahia</option>
+                      <option value="CE">Ceará</option>
+                      <option value="DF">Distrito Federal</option>
+                      <option value="ES">Espírito Santo</option>
+                      <option value="GO">Goiás</option>
+                      <option value="MA">Maranhão</option>
+                      <option value="MT">Mato Grosso</option>
+                      <option value="MS">Mato Grosso do Sul</option>
+                      <option value="MG">Minas Gerais</option>
+                      <option value="PA">Pará</option>
+                      <option value="PB">Paraíba</option>
+                      <option value="PR">Paraná</option>
+                      <option value="PE">Pernambuco</option>
+                      <option value="PI">Piauí</option>
+                      <option value="RJ">Rio de Janeiro</option>
+                      <option value="RN">Rio Grande do Norte</option>
+                      <option value="RS">Rio Grande do Sul</option>
+                      <option value="RO">Rondônia</option>
+                      <option value="RR">Roraima</option>
+                      <option value="SC">Santa Catarina</option>
+                      <option value="SP">São Paulo</option>
+                      <option value="SE">Sergipe</option>
+                      <option value="TO">Tocantins</option>
+                      <option value="EX">Estrangeiro</option>
+                    </select>
+                  </div>
+                  <div class="inputBox">
+                    <span>CEP :</span>
+                    <input class="form-control" type="text" placeholder="12345-678" id="cep" required
+                      pattern="^\d{5}-\d{3}$" title="Insira um CEP válido." maxlength="9" oninput="mascaraCEP(this)">
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <h3 class="title">Pagamento</h3>
+                <div class="inputBox">
+                  <span>Métodos Aceito :</span>
+                  <img src="img/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                  <span>Nome no Cartão :</span>
+                  <input class="form-control" type="text" placeholder="Sr. João da Silva" id="nomeCartao" required
+                    pattern="^[a-zA-Z\u00C0-\u00FF\s]+$" title="Nome deve conter apenas letras e espaços.">
+                </div>
+                <div class="inputBox">
+                  <span>Número do Cartão :</span>
+                  <input class="form-control" type="text" placeholder="1111 2222 3333 4444" id="numeroCartao" required
+                    pattern="^\d{4} \d{4} \d{4} \d{4}$" title="Insira um número de cartão válido."
+                    oninput="mascaraCartao(this)">
+                </div>
+                <div class="inputBox">
+                  <span>Cpf :</span>
+                  <input class="form-control" type="text" placeholder="123.456.789-00" maxlength="14" id="cpf" oninput="mascaraCPF(this)">
+                </div>
+
+                <div class="flex">
+                  <div class="inputBox">
+                    <span>Ano Expiração :</span>
+                    <input class="form-control" type="number" placeholder="2023">
+                  </div>
+                  <div class="inputBox">
+                    <span>Mês Expiração :</span>
+                    <input class="form-control" type="number" placeholder="12" maxlength="02" id="mes">
+                  </div>
+                  <div class="inputBox">
+                    <br>
+                    <span>CVV :</span>
+                    <input class="form-control" type="text" placeholder="123" id="cvv" maxlength="3" required
+                      pattern="^\d{3}$" title="Insira um CVV válido.">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- botão enviar com o javascript -->
+            <button class="btn btn-primary my-2 my-sm-0" type="submit" onclick="enviar()">Enviar</button>
+
+
+            <!-- botão limpar -->
+            <button class="btn btn-outline-success my-2 my-sm-0" type="reset"
+              style="border-color: rgb(240, 50, 16); color: rgb(37, 25, 25); background-color: rgb(230, 110, 54);"
+              onclick="limpar()">Limpar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================FOOTER=============================================== -->
+  <footer class="bg-dark text-white position-absolute">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-4">
+          <h1>AUMIGOS</h1>
+          <p>Vidas Animais importam!</p>
+          <!-- Mova os ícones abaixo do parágrafo e ajuste o alinhamento -->
+          <div class="footer-social-media d-flex justify-content-space-between">
+            <a href="#" class="footer-link" id="instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="footer-link" id="facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-link" id="whatsapp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Div para envolver as logos -->
+          <div class="d-flex">
+            <div class="mb-3 mr-3"> <!-- Adicione margem à direita para separar as logos -->
+              <img src="img/logoong.png" alt="" class="rounded-circle"> <!-- Torna a imagem redonda -->
+            </div>
+            <div class="mb-3">
+              <img src="img/logo.png" alt="" class="rounded-circle"> <!-- Torna a imagem redonda -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 pl-lg-5">
+          <h3>Inscreva-se</h3>
+          <p>Deixe seu E-mail e receba nossas novidades!</p>
+          <div class="input-group">
+            <input type="email" class="form-control" id="emailInput" placeholder="Seu E-mail" required>
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" onclick="validarEmail()" style="color: antiquewhite;">
+                <i class="fas fa-envelope"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center py-2 bg-dark">
+        &#169; 2023 - Todos os direitos reservados | INNOVATECH.
+      </div>
+  </footer>
+  <script src="js/validarEmail.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+    
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn-menu:hover{
+    color: darkgoldenrod;
+}
+
+.btn1:hover {
+    cursor: pointer;
+    color: darkgoldenrod;
+    background: #042670;
+}
+.headline {
+    font-size: 2.5rem;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/*Navbar*/
+#navbar {
+    width: 100%;
+    background: #835d18;
+    color: #dbd9d9;
+    height: 70px;
+    position: fixed;
+}
+
+.logoong {
+    height: 180px;
+    width: 180px;  
+    padding-top: 40px;
+    /* align-items: flex-start; */
+}
+
+#navbar-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo {
+    font-size: 2rem;
+    text-align: left;
+
+}
+#navbar-items {
+    font-size: 0.8rem;
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+#navbar-items li {
+    padding: 10px;
+}
+/*ShowCase */
+
+
+body {
+   
+    font-size: 18px;
+    line-height: 1.5;
+    
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+#formulario-cadastro {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+textarea {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+}
+label[for="name"],
+label[for="email"],
+label[for="senha"],
+label[for="area"],
+label[for="telefone"]
+label[for="coments"]{
+    display: inline-block;
+    color: #132436;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #D96704;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+input[type="reset"] {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(206, 204, 204);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#showcase {
+    height: 140vh;
+    display: flex;
+    padding: 15px;
+    /* margin-bottom: 15px; */
+    justify-content: center;
+    align-items: center;
+    color: #dbd9d9;
+    background: url('../img/caocomputador.png') no-repeat center center/cover;
+
+    
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: color;
+}
+
+#showcase-container {
+    text-align: center;
+    width: 60%;
+}
+#showcase-container h2 {
+    font-size: 2.5rem;
+}
+#showcase-container p {
+    font-size: 1.2rem;
+    padding-bottom: 30px;
+}
+
+
+
+/* About */
+
+#features {
+    width: 100%;
+    background: #c2c2c2;
+    color: #dbd9d9;
+    
+}
+#features-container {
+   width: 100%;
+   margin: auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr); 
+   grid-column-gap: 50px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    background: #101026;
+    padding: 20px;
+    border-radius: 5px;
+    border: solid 5px #b85805;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+/* Rodape */
+
+footer {
+    width: 100%;
+    color: honeydew;
+}
+#footer_content {
+    background-color: #835d18;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;    
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap:2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: blanchedalmond;
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#facebook {
+    background-color: #4267b3;
+}
+#whatsapp {
+    background-color: #25d366;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: aliceblue;
+    transition: all 0.4s;
+}
+ 
+.footer-list .footer-link:hover {
+    color: #ff9807;
+
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#footer_subscribe p {
+    color: rgb(253, 245, 245);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: rgb(212, 207, 207);
+    border-radius: 4px;
+}
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+#input_group button {
+    background-color: #ce942a;
+    border: none;
+    color: rgb(241, 236, 236);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+#input_group button:hover {
+    background-color: #44300a;
+    opacity: 0.8;
+}
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #44300a;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+#logos img{
+    display: flex;
+    height: 180px;
+    width: 180px;  
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 2fr);
+        gap: 2rem;
+        margin-top: 100px;
+    }
+    .about-us{
+        flex-direction: column;
+    }
+    .about-us img{
+        flex: 0 100%;
+        max-width: 100%;
+    }
+    .content{
+        flex: 0 100%;;
+        max-width: 100%;
+        padding: 15px;
+        margin-top: auto;
+    }
+    #showcase{
+        height: max-content;
+
+    }
+ }
+ @media screen and (max-width: 427px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+        margin-top: 30px;
+    }
+ }

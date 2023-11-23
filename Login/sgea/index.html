@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGEA | AUMIGOS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5 Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<style>
+    .sort-link {
+        color: #ffffff;
+        text-decoration: none;
+
+    }
+
+    .sort-link:hover {
+        text-decoration: underline;
+        color: dimgray;
+    }
+</style>
+
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto px-0">
+                <div id="sidebar" class="collapse collapse-horizontal show border-end vh-100 shadow-sm">
+                    <div id="sidebar-nav" class="list-group border-0 rounded-0">
+                        <div class="p-2">
+
+
+                        </div>
+                        <!-- <form class="d-flex p-2">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </form> -->
+                        <ul class="list-group">
+                            <li class="list-group-item" aria-current="false"> <a href="#"
+                                    class="text-decoration-none text-white">Inbox</a> </li>
+                            <li class="list-group-item"><a href="#" class="text-decoration-none text-black">
+
+                                    <h5>Menu</h5>
+                                </a></li>
+                            <li class="list-group-item active" aria-current="true"> <a href="#"
+                                    class="text-decoration-none text-black"> <i class="bi bi-house"> Home</i></a> </li>
+                            <li class="list-group-item" aria-current="true">
+                                <div class="dropdown">
+                                    <i class="bi bi-plus"></i><a class="dropdown-toggle text-decoration-none text-black"
+                                        href="#" role="button" id="cadastroDropdown" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Cadastrar
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="cadastroDropdown">
+                                        <li><a class="dropdown-item" href="cadastro_voluntario.php">Voluntário</a></li>
+                                        <li><a class="dropdown-item" href="cadastro_empresa.php">Empresa</a></li>
+                                        <li><a class="dropdown-item" href="cadastro_projeto.php">Projeto</a></li>
+                                        <li><a class="dropdown-item" href="cadastro_cao.php">Animais</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="list-group-item dropdown">
+                                <i class="bi bi-search"></i><a class="dropdown-toggle text-decoration-none text-black"
+                                    href="#" role="button" id="consultaDropdown" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Consultar
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="consultaDropdown">
+                                    <li><a class="dropdown-item" href="consultar_voluntario.php">Voluntário</a></li>
+                                    <li><a class="dropdown-item" href="consultar_empresa.php">Empresa</a></li>
+                                    <li><a class="dropdown-item" href="consultar_projeto.php">Projeto</a></li>
+                                    <li><a class="dropdown-item" href="consultar_cao.php">Animais</a></li>
+                                </ul>
+                            </li>
+                            <li class="list-group-item" aria-current="false"> <a href="#"
+                                    class="text-decoration-none text-white">Inbox</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col ps-md-2 pt-2">
+                <a href="#" data-bs-target="#sidebar" data-bs-toggle="collapse"
+                    class="border rounded-3 p-1 text-decoration-none"><i class="bi bi-list"></i></a>
+                <div class="page-header pt-3 text-center">
+                    <h2>Bem-vindo ao Sistema de Gerenciamento da ONG</h2>
+                    <br>
+                </div>
+                <hr>
+                <div class="col-12 mt-5 align-items-center p-2">
+                    <div class="col-4">
+                        <fieldset>
+                            <legend>Cadastro de Voluntários:</legend>
+                            <form onsubmit="addNewItem(); return false;">
+                                <label for="newNome">Nome:</label>
+                                <input type="text" id="newNome" class="form-control" required>
+                                <br>
+                                <label for="newTelefone">Telefone:</label>
+                                <input type="text" id="newTelefone" class="form-control" required>
+                                <br>
+                                <label for="newCidade">Cidade:</label>
+                                <input type="text" id="newCidade" class="form-control" required>
+                                <br>
+                                <button type="submit" class="mb-4">Cadastrar Novo Item</button>
+                            </form>
+                        </fieldset>
+                    </div>
+                    <fieldset>
+                        <legend>Voluntários Cadastrados</legend>
+                        <table class="table table-striped">
+                            <thead class="table btn-primary">
+                                <tr>
+                                    <th style="width: 5%;"><input type="checkbox" id="checkAll" onclick="checkAll()">
+                                    </th>
+                                    <th style="width: 20%;">ID </th>
+                                    <th style="width: 35%;">Nome</th>
+                                    <th style="width: 20%;">Telefone</th>
+                                    <th style="width: 20%;">Cidade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Itens existentes na tabela -->
+                                <tr>
+                                    <td><input type="checkbox" class="checkbox"></td>
+                                    <td>1</td>
+                                    <td>João</td>
+                                    <td>123-456-7890</td>
+                                    <td>Cidade A</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button onclick="deleteSelected()" class="mb-4">Excluir Selecionados</button>
+
+                </div>
+                </fieldset>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            var data = [
+                { id: 1, nome: "Leandro Gasque", telefone: "18 98105-3846", cidade: "Presidente Prudente" },
+                { id: 2, nome: "Alex Otaverson", telefone: "18 98155-6532", cidade: "Presidente Prudente" },
+                { id: 3, nome: "Breno Oliveira", telefone: "18 98564-6547", cidade: "Presidente Prudente" },
+                { id: 4, nome: "João Lucas", telefone: "18 97589-4563", cidade: "Presidente Prudente" },
+                { id: 5, nome: "Marcelo Marajon", telefone: "18 96585-1212", cidade: "Presidente Prudente" }
+            ];
+    
+            function renderTable() {
+                var tbody = document.querySelector('tbody');
+                tbody.innerHTML = '';
+    
+                data.forEach(function (item) {
+                    var row = '<tr>';
+                    row += '<td><input type="checkbox" class="checkbox" onchange="verificarCheckPrincipal()"></td>';
+                    row += '<td>' + item.id + '</td>';
+                    row += '<td>' + item.nome + '</td>';
+                    row += '<td>' + item.telefone + '</td>';
+                    row += '<td>' + item.cidade + '</td>';
+                    row += '</tr>';
+    
+                    tbody.innerHTML += row;
+                });
+            }
+    
+            function addNewItem() {
+                var newNome = document.getElementById('newNome').value;
+                var newTelefone = document.getElementById('newTelefone').value;
+                var newCidade = document.getElementById('newCidade').value;
+    
+                // Simulação de criação de um novo item
+                var newItem = {
+                    id: data.length + 1, // Ajustar conforme necessário
+                    nome: newNome,
+                    telefone: newTelefone,
+                    cidade: newCidade
+                };
+    
+                // Adiciona o novo item ao vetor de dados
+                data.push(newItem);
+    
+                // Atualiza a tabela após a adição do novo item
+                renderTable();
+    
+                // Limpa os campos do formulário após a adição do novo item
+                document.getElementById('newNome').value = '';
+                document.getElementById('newTelefone').value = '';
+                document.getElementById('newCidade').value = '';
+            }
+    
+            renderTable();
+    
+            function verificarCheckPrincipal() {
+                var checkboxes = document.getElementsByClassName('checkbox');
+                var checkPrincipal = document.getElementById('checkAll');
+    
+                var todosSelecionados = true;
+                for (var i = 0; i < checkboxes.length; i++) {
+                    if (!checkboxes[i].checked) {
+                        todosSelecionados = false;
+                        break;
+                    }
+                }
+    
+                checkPrincipal.checked = todosSelecionados;
+            }
+    
+            function checkAll() {
+                var checkboxes = document.getElementsByClassName('checkbox');
+                var selectAllCheckbox = document.getElementById('checkAll');
+    
+                for (var i = 0; i < checkboxes.length; i++) {
+                    checkboxes[i].checked = selectAllCheckbox.checked;
+                }
+            }
+    
+            function deleteSelected() {
+                var checkboxes = document.getElementsByClassName('checkbox');
+                var selectedIds = [];
+    
+                for (var i = 0; i < checkboxes.length; i++) {
+                    if (checkboxes[i].checked) {
+                        selectedIds.push(parseInt(checkboxes[i].parentNode.nextElementSibling.textContent));
+                    }
+                }
+    
+                // Simulação de exclusão
+                data = data.filter(function (item) {
+                    return !selectedIds.includes(item.id);
+                });
+    
+                // Atualiza a tabela após a exclusão
+                renderTable();
+    
+                // Exemplo de alerta com os IDs selecionados
+                alert('Itens selecionados para exclusão: ' + selectedIds.join(', '));
+            }
+        </script>
+</body>
+
+</html>

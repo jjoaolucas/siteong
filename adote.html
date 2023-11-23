@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/adote.css">
+  <link rel="stylesheet" href="js/adote.js">
+  <title>AUMIGOS | ADOTE</title>
+  <style>
+    .barra-lateral {
+      position: static;
+      left: 0;
+      top: 0;
+      width: 200px;
+      height: auto;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: solid 2px #616161;
+    }
+
+    .barra-lateral ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .barra-lateral ul li {
+      margin-bottom: 10px;
+    }
+
+    .barra-lateral ul li a {
+      display: block;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .container-galeria {
+      display: flex;
+      grid-template-columns: repeat(4, 3fr);
+      gap: 40px;
+      justify-content: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ========================================NAVBAR=============================================== -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark py-3">
+
+    <a href="index.html"><img class="navbar-brand" src="img/logoong.png" width="200" height="200"
+        class="d-inline-block align-top" alt=""></a>
+    <h1 class="logo">Ong Aumigos</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+      aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">Sobre<span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="donate.html">Doe <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="adote.html">Adote <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="contato.html">Contato <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="../voluntario.html">Seja Voluntário <span class="sr-only">(página atual)</span></a>
+        </li>
+        <li class="nav-item active">
+          <!-- <a class="nav-link" href="marketplace.html">LOJA <span class="sr-only">(página atual)</span></a> -->
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="Login/login.html">Logar-se <span class="sr-only">(página atual)</span></a>
+      </ul>
+    </div>
+  </nav>
+  <!-- ========================================HEADER=============================================== -->
+  <header id="showcase">
+    <div id="showcase-container">
+      <h2>Estamos muito felizes de ter você aqui!</h2><br><br>
+      <p>Seu apoio é essencial para continuarmos resgatando,
+        reabilitando e encontrando lares cheios de amor para esses patudinhos!</p>
+    </div>
+  </header>
+  <section>
+    <div class="headline" style="color: #f0f0f0;">Me leva pra casa!</div>
+    <div class="headline1 mb-4"
+      style="color: #070707; background-color: #c8c3c300; width: fit-content; margin-left: 35%; text-align: center; width: 500px; padding: 5px;">
+      <h4>IMPORTANTE!</h4>
+      <p style="color: red;">Antes de adotar, leia o manual do adotante para garantir que você está pronto para a adoção responsável de
+        um cão.</p>
+      <button type="button" class="btn btn-primary mb-1" data-toggle="modal" data-target="#manualModal">
+        ACESSE AQUI
+      </button>
+      <!-- Modal -->
+      <div class="modal fade" id="manualModal" tabindex="-1" role="dialog" aria-labelledby="manualModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="manualModalLabel">Manual do Adotante</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h1>Manual do Adotante: Guiando Você na Jornada da Adoção Responsável de Cães</h1>
+              <hr>
+              <p>Bem-vindo à família de adotantes responsáveis! Adotar um cachorro é uma jornada emocionante e
+                gratificante, mas também é uma grande responsabilidade. Este manual foi criado para orientá-lo em cada
+                passo, garantindo o bem-estar do seu novo amigo peludo. Vamos começar essa incrível jornada juntos!</p>
+              <hr>
+              <h2>1. Preparando-se para a Adoção</h2>
+
+              <h3>1.1 Conhecendo o Seu Estilo de Vida</h3>
+              <p>Antes de adotar, avalie seu estilo de vida. Cada cachorro é único, e suas necessidades variam.
+                Considere fatores como espaço, tempo disponível, nível de atividade e orçamento.</p>
+
+              <h3>1.2 Escolhendo o Cachorro Perfeito</h3>
+              <p>Visite nosso abrigo e conheça os cães disponíveis para adoção. Observe seu comportamento, necessidades
+                e personalidade. Nossa equipe estará mais do que feliz em ajudá-lo a encontrar o parceiro peludo ideal
+                para você.</p>
+              <hr>
+              <h2>2. O Processo de Adoção</h2>
+
+              <h3>2.1 Preenchendo a Solicitação de Adoção</h3>
+              <p>Complete o formulário de adoção. Isso nos ajudará a entender suas intenções, experiência anterior com
+                animais de estimação e se você possui as condições adequadas para o cão escolhido.</p>
+
+              <h3>2.2 Entrevista com a Equipe de Adoção</h3>
+              <p>Após revisar sua aplicação, nossa equipe realizará uma entrevista para garantir que você e o cão
+                selecionado estejam em perfeita sintonia. É uma oportunidade para esclarecer dúvidas e garantir uma boa
+                compatibilidade.</p>
+              <hr>
+              <h2>3. A Chegada do Novo Membro da Família</h2>
+
+              <h3>3.1 Ambiente Confortável</h3>
+              <p>Prepare sua casa antes da chegada do seu novo amigo. Garanta um espaço seguro, cama confortável,
+                tigelas de água e comida, brinquedos adequados e, claro, muito amor.</p>
+
+              <h3>3.2 Introdução Gradual</h3>
+              <p>Dê ao seu novo amigo tempo para se ajustar. Introduza-o gradualmente a diferentes áreas da casa e
+                membros da família. Se possível, comece com períodos curtos e aumente gradualmente.</p>
+              <hr>
+              <h2>4. Cuidando do Seu Cachorro</h2>
+
+              <h3>4.1 Alimentação Balanceada</h3>
+              <p>Forneça uma dieta saudável e equilibrada. Consulte nosso veterinário para orientações sobre a
+                alimentação adequada para a raça e tamanho do seu cão.</p>
+
+              <h3>4.2 Atividade Física</h3>
+              <p>Mantenha seu cão ativo com passeios regulares, brincadeiras e exercícios. Isso não só beneficia a saúde
+                física, mas também fortalece o vínculo entre vocês.</p>
+
+              <hr>
+              <h2>5. Saúde e Bem-Estar</h2>
+
+              <h3>5.1 Visitas Veterinárias Regulares</h3>
+              <p>Agende check-ups regulares e vacinações. Fique atento a sinais de desconforto, mudanças de
+                comportamento ou problemas de saúde.</p>
+
+              <h3>5.2 Higiene e Cuidados</h3>
+              <p>Mantenha a higiene do seu cão com banhos regulares, escovação e cuidados dentários. Isso não só mantém
+                seu amigo cheiroso, mas também promove a saúde geral.</p>
+              <hr>
+              <h2>6. Socialização e Treinamento</h2>
+
+              <h3>6.1 Socialização Positiva</h3>
+              <p>Exponha seu cão a diferentes ambientes, pessoas e animais desde cedo. Isso ajuda a prevenir problemas
+                comportamentais e a tornar a interação com outros mais positiva.</p>
+
+              <h3>6.2 Treinamento Consistente</h3>
+              <p>Use métodos de treinamento positivos e consistentes para ensinar comandos básicos. A paciência e a
+                recompensa são chaves para um treinamento bem-sucedido.</p>
+              <hr>
+              <h2>7. Amor e Companhia</h2>
+
+              <h3>7.1 Tempo de Qualidade</h3>
+              <p>Dedique tempo diário para brincar, acariciar e interagir com seu cão. Cães são seres sociais que
+                prosperam com amor e atenção.</p>
+
+              <h3>7.2 Compreendendo as Necessidades Emocionais</h3>
+              <p>Esteja atento às necessidades emocionais do seu cão. Seja sensível às pistas comportamentais e
+                ajuste-se conforme necessário.</p>
+              <hr>
+              <h2>8. Comunidade de Adotantes</h2>
+
+              <h3>8.1 Participação em Eventos</h3>
+              <p>Participe de eventos da comunidade de adotantes. Compartilhe experiências, tire dúvidas e faça parte de
+                uma rede de apoio.</p>
+
+              <h3>8.2 Atualizações e Suporte</h3>
+              <p>Mantenha-nos informados sobre o progresso do seu cão. Estamos aqui para oferecer suporte contínuo e
+                orientação.</p>
+              <hr>
+              <h2>9. Adoção Consciente</h2>
+
+              <h3>9.1 Divulgação Responsável</h3>
+              <p>Compartilhe sua experiência de adoção e incentive a adoção responsável. Ajude a conscientizar sobre os
+                desafios enfrentados pelos animais abandonados.</p>
+              <h3>9.2 Estendendo a Mão para a Comunidade</h3>
+              <p>Considere ser voluntário ou apoiar outras iniciativas de bem-estar animal. Juntos, podemos fazer a
+                diferença na vida de muitos animais.</p>
+              <p>Lembre-se, a adoção é um compromisso vitalício. Ao seguir este manual, você está dando ao seu
+                novo amigo uma segunda chance e construindo uma amizade duradoura. Obrigado por escolher a adoção e por
+                fazer parte da nossa missão de proporcionar uma vida melhor para todos os cães!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container-galeria ml-0 p-1">
+      <div class="barra-lateral container-fluid ml-0">
+        <ul>
+          <li><a href="#" style="background-color: #74726e; color: #ccc; text-align: center;">Porte</a></li>
+          <input type="checkbox" id="sexo" name="area" value="sexo">
+          <label for="musica" style="color: #74726e;"> P - Até 5kg</label><br>
+          <input type="checkbox" id="sexo" name="area" value="sexo">
+          <label for="musica" style="color: #74726e;"> M - De 5kg a 10kg</label><br>
+          <input type="checkbox" id="sexo" name="area" value="sexo">
+          <label for="musica" style="color: #74726e;"> G - Acima de 10kg</label><br><br>
+          <li><a href="#" style="background-color: #74726e; color: #ccc; text-align: center;">Sexo</a></li>
+          <input type="checkbox" id="sexo" name="area" value="sexo">
+          <label for="musica" style="color: #74726e;"> Macho</label><br>
+          <input type="checkbox" id="sexo" name="area" value="sexo">
+          <label for="musica" style="color: #74726e;"> Fêmea</label><br><br>
+          <li><a href="#" style="background-color: #74726e; color: #ccc; text-align: center;">Idade</a></li>
+          <input type="checkbox" id="sexo" name="area" value="sexo">
+          <label for="musica" style="color: #74726e;"> Até 5 anos</label><br>
+          <input type="checkbox" id="sexo" name="area" value="sexo">
+          <label for="musica" style="color: #74726e;"> De 5 a 10 anos </label><br>
+          <input type="checkbox" id="sexo" name="area" value="sexo">
+          <label for="musica" style="color: #74726e;"> Acima de 10 anos </label><br>
+        </ul>
+      </div>
+      <div class="container ml-0">
+        <div id="gallery-container">
+          <div class="card" style="width: 18rem;">
+            <img src="img/adote/Screenshot_14.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pitoco</h5>
+              <p class="card-text"><span style="font-weight: bold;">Idade:</span> 5 anos</p>
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#manualModal3">
+                Ver Mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="manualModal3" tabindex="-1" role="dialog" aria-labelledby="manualModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="manualModalLabel"></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5">
+                        <h1 class="text-center">Pitoco - Uma História de Superação</h1>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Perfil:</h3>
+                            <ul>
+                              <li><strong>Nome:</strong> Pitoco</li>
+                              <li><strong>Idade:</strong> 5 anos</li>
+                              <li><strong>Porte:</strong> Pequeno</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">História:</h3>
+                            <p>Pitoco, um cão de 5 anos de pequeno porte, enfrentou adversidades nas ruas até ser
+                              resgatado pela ONG Aumigos.
+                              Desnutrido e assustado, ele recebeu cuidados médicos e amor durante sua reabilitação.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Reabilitação e Adoção:</h3>
+                            <p>Após meses de reabilitação, Pitoco revelou uma incrível resiliência e uma personalidade
+                              amorosa. Uma família
+                              amorosa o adotou, proporcionando-lhe não apenas um lar, mas também carinho e alegria.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Cuidados Contínuos:</h3>
+                            <p>Sua nova família comprometeu-se com cuidados contínuos, incluindo visitas ao veterinário,
+                              uma dieta
+                              equilibrada e atividades estimulantes. Pitoco agora desfruta de uma vida plena, repleta de
+                              passeios e
+                              momentos de carinho.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Como Ajudar:</h3>
+                            <p>Considerando adotar, apoiar financeiramente a ONG Aumigos ou oferecer-se como voluntário,
+                              você pode fazer a
+                              diferença na vida de animais necessitados, seguindo o exemplo inspirador de Pitoco. Sua
+                              história é um lembrete
+                              poderoso de como a compaixão pode transformar vidas.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img/adote/Screenshot_15.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fumaça</h5>
+              <p class="card-text"><span style="font-weight: bold;">Idade:</span> 3 anos</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#manualModal4">
+                Ver Mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="manualModal4" tabindex="-1" role="dialog" aria-labelledby="manualModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="manualModalLabel"></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5">
+                        <h1 class="text-center">Cão Fumaça - Uma História de Coragem</h1>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Perfil:</h3>
+                            <ul>
+                              <li><strong>Nome:</strong> Cão Fumaça</li>
+                              <li><strong>Idade:</strong> 3 anos</li>
+                              <li><strong>Porte:</strong> Médio</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">História:</h3>
+                            <p>Cão Fumaça, um valente cão de 3 anos de porte médio, enfrentou desafios extraordinários
+                              em sua jornada. Sua
+                              história é uma prova da incrível resiliência dos animais diante de circunstâncias
+                              adversas.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Resgate e Recuperação:</h3>
+                            <p>Encontrado em uma situação precária, Cão Fumaça foi resgatado por voluntários dedicados.
+                              Sua recuperação
+                              envolveu cuidados veterinários, alimentação adequada e, acima de tudo, doses generosas de
+                              amor e paciência.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Novo Começo:</h3>
+                            <p>Agora, Cão Fumaça desfruta de um novo começo. Adotado por uma família amorosa, ele
+                              experimenta a alegria de
+                              ser amado e cuidado. Seus dias são preenchidos com brincadeiras, passeios e a companhia de
+                              seus novos
+                              amigos humanos.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Como Ajudar:</h3>
+                            <p>Considere apoiar organizações locais de resgate de animais, como a ONG Aumigos, para que
+                              mais animais como Cão
+                              Fumaça possam ter uma segunda chance na vida. Sua contribuição faz a diferença.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img/Screenshot_4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kiki</h5>
+              <p class="card-text"><span style="font-weight: bold;">Idade:</span> 7 anos</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#manualModal5">
+                Ver Mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="manualModal5" tabindex="-1" role="dialog" aria-labelledby="manualModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="manualModalLabel"></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5">
+                        <h1 class="text-center">Perfil da Cadela Kiki - Uma Amiga Leal</h1>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Perfil:</h3>
+                            <ul>
+                              <li><strong>Nome:</strong> Kiki</li>
+                              <li><strong>Idade:</strong> 7 anos</li>
+                              <li><strong>Porte:</strong> Médio</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">História:</h3>
+                            <p>Kiki, uma cadela adorável de 7 anos, tem uma história marcada por lealdade e carinho. Ela
+                              conquistou o coração
+                              de todos que tiveram a sorte de cruzar seu caminho.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Personalidade:</h3>
+                            <p>Com seus 7 anos, Kiki é uma companheira leal e amorosa. Sua personalidade cativante e
+                              gentil a torna a
+                              parceira perfeita para quem busca a alegria de ter um amigo de quatro patas.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Adoção:</h3>
+                            <p>Kiki está em busca de um lar amoroso para passar o resto de seus dias. Sua lealdade e
+                              devoção estão
+                              disponíveis para aqueles que desejam experimentar o amor incondicional de uma cadela fiel.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Como Adotar:</h3>
+                            <p>Se você está interessado em dar um lar para a Kiki, entre em contato com a ONG Aumigos.
+                              Adotar é uma
+                              decisão que pode transformar não apenas a vida dela, mas também a sua.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img/Screenshot_5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Thanos</h5>
+              <p class="card-text"><span style="font-weight: bold;">Idade:</span> 4 anos</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#manualModal6">
+                Ver Mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="manualModal6" tabindex="-1" role="dialog" aria-labelledby="manualModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="manualModalLabel"></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5">
+                        <h1 class="text-center">Thanos - O Gigante Gentil</h1>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Perfil:</h3>
+                            <ul>
+                              <li><strong>Nome:</strong> Thanos</li>
+                              <li><strong>Idade:</strong> 4 anos</li>
+                              <li><strong>Porte:</strong> Grande</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Descrição:</h3>
+                            <p>Thanos, o gigante gentil de 4 anos, é um cão de porte grande em busca de um lar amoroso.
+                              Sua presença
+                              imponente esconde um coração afetuoso e leal, pronto para se tornar o guardião da sua
+                              família.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Personalidade:</h3>
+                            <p>Apesar de seu tamanho imponente, Thanos é amigável e calmo. Ele adora receber carinho e
+                              atenção, e sua
+                              lealdade é incomparável. Um verdadeiro gigante gentil pronto para fazer parte de uma
+                              família amorosa.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Adoção:</h3>
+                            <p>Thanos está em busca de um lar onde possa compartilhar seu amor e receber o carinho que
+                              merece. Se você tem
+                              espaço em seu coração e lar para um gigante gentil, considere adotar Thanos.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Como Adotar:</h3>
+                            <p>Se você deseja dar um lar para o Thanos, entre em contato com a ONG Aumigos. Adotar é uma
+                              decisão
+                              significativa que pode transformar a vida dele e a sua.</p>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img/Screenshot_6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tião</h5>
+              <p class="card-text"><span style="font-weight: bold;">Idade:</span> 12 anos</p>
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#manualModal7">
+                Ver Mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="manualModal7" tabindex="-1" role="dialog" aria-labelledby="manualModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="manualModalLabel"></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5">
+                        <h1 class="text-center">Tião - O Sábio de Pelo Branco</h1>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Perfil:</h3>
+                            <ul>
+                              <li><strong>Nome:</strong> Tião</li>
+                              <li><strong>Idade:</strong> 12 anos</li>
+                              <li><strong>Porte:</strong> Grande</li>
+                              <li><strong>Pelo:</strong> Branco</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Descrição:</h3>
+                            <p>Tião, o sábio de 12 anos, é um cão de porte grande com um majestoso pelo branco. Sua
+                              experiência de vida e
+                              sua pelagem imaculada o tornam um companheiro especial em busca de um lar tranquilo e
+                              acolhedor.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Personalidade:</h3>
+                            <p>Com sua idade avançada, Tião é tranquilo e gentil. Seu olhar sábio e sereno esconde
+                              histórias de uma vida
+                              repleta de amor e lealdade. Ele aprecia momentos calmos e carinho, tornando-se o parceiro
+                              perfeito para quem
+                              busca companhia serena.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Adoção:</h3>
+                            <p>Tião procura um lar onde possa desfrutar de seus anos dourados em paz. Se você está
+                              pronto para receber o
+                              amor e a sabedoria de Tião, considere dar a ele o lar carinhoso que ele merece.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Como Adotar:</h3>
+                            <p>Se você deseja proporcionar um lar para o Tião, entre em contato com a ONG Aumigos.
+                              Adotar um cão mais
+                              experiente pode ser uma experiência gratificante e enriquecedora.</p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="img/Screenshot_7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Estopinha</h5>
+              <p class="card-text"><span style="font-weight: bold;">Idade:</span> 12 anos</p>
+
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#manualModal8">
+                Ver Mais
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="manualModal8" tabindex="-1" role="dialog" aria-labelledby="manualModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="manualModalLabel"></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container mt-5">
+                        <h1 class="text-center">Estopinha - A Alegria de 3 Anos</h1>
+                        
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Perfil:</h3>
+                            <ul>
+                              <li><strong>Nome:</strong> Estopinha</li>
+                              <li><strong>Idade:</strong> 3 anos</li>
+                              <li><strong>Personalidade:</strong> Sapeca</li>
+                              <li><strong>Pelo:</strong> Branco Encardido</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Descrição:</h3>
+                            <p>Estopinha, a alegria de 3 anos, é um cão sapeca com um pelo branco encardido que conta
+                              histórias de suas
+                              aventuras. Seu entusiasmo pela vida e sua personalidade travessa o tornam um companheiro
+                              cheio de energia e
+                              diversão.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Aventuras:</h3>
+                            <p>Estopinha adora explorar o mundo ao seu redor. Suas travessuras e brincadeiras são
+                              contagiantes, trazendo
+                              sorrisos a todos que têm o prazer de compartilhar seu espaço. Prepare-se para muita
+                              alegria e diversão com
+                              esse sapequinha!</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Adoção:</h3>
+                            <p>Estopinha está em busca de uma família que aprecie sua energia contagiante. Se você está
+                              pronto para ter um
+                              companheiro animado e amoroso, Estopinha pode ser o cão perfeito para você.</p>
+                          </div>
+                        </div>
+
+                        <div class="card mt-4">
+                          <div class="card-body">
+                            <h3 class="card-title">Como Adotar:</h3>
+                            <p>Para adotar Estopinha, entre em contato com a ONG Aumigos. Sua casa ganhará um toque
+                              especial de alegria e
+                              vitalidade com a presença desse cãozinho encantador.</p>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+  </section>
+  <!-- ========================================FOOTER=============================================== -->
+  <footer class="bg-dark text-white position-static">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-md-4">
+          <h1>AUMIGOS</h1>
+          <p>Vidas Animais importam!</p>
+          <!-- Mova os ícones abaixo do parágrafo e ajuste o alinhamento -->
+          <div class="footer-social-media d-flex justify-content-space-between">
+            <a href="#" class="footer-link" id="instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="footer-link" id="facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-link" id="whatsapp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <!-- Div para envolver as logos -->
+          <div class="d-flex">
+            <div class="mb-3 mr-3"> <!-- Adicione margem à direita para separar as logos -->
+              <img src="img/logoong.png" alt="" class="rounded-circle"> <!-- Torna a imagem redonda -->
+            </div>
+            <div class="mb-3">
+              <img src="img/logo.png" alt="" class="rounded-circle"> <!-- Torna a imagem redonda -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h3>Inscreva-se</h3>
+          <p>Deixe seu E-mail e receba nossas novidades!</p>
+          <div class="input-group">
+            <input type="email" class="form-control" id="emailInput" placeholder="Seu E-mail" required>
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" onclick="validarEmail()" style="color: antiquewhite;">
+                <i class="fas fa-envelope"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-2 bg-dark">
+      &#169; 2023 - Todos os direitos reservados | INNOVATECH.
+    </div>
+  </footer>
+  <script src="js/validarEmail.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

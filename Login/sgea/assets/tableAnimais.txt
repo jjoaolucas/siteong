@@ -1,0 +1,45 @@
+   <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nome</th>
+                                <th>Raça</th>
+                                <th>Sexo</th>
+                                <th>Idade</th>
+                                <th>Peso</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            // Conectar ao banco de dados (ajuste as credenciais conforme necessário)
+                            $conexao = mysqli_connect('localhost', 'root', '', 'ongaumigos');
+
+                            // Verificar a conexão
+                            if ($conexao->connect_error) {
+                                die("Falha na conexão: " . $conexao->connect_error);
+                            }
+
+                            // Consulta para recuperar dados da tabela "caes"
+                            $consulta = "SELECT id, nomeCao, racaCao, sexoCao, idadeCao, pesoCao FROM animais";
+
+                            $resultado = $conexao->query($consulta);
+
+                            if ($resultado->num_rows > 0) {
+                                while ($linha = $resultado->fetch_assoc()) {
+                                    echo "<tr>";
+                                    echo "<td>" . $linha["id"] . "</td>";
+                                    echo "<td>" . $linha["nome"] . "</td>";
+                                    echo "<td>" . $linha["raca"] . "</td>";
+                                    echo "<td>" . $linha["sexo"] . "</td>";
+                                    echo "<td>" . $linha["idade"] . "</td>";
+                                    echo "<td>" . $linha["peso"] . "</td>";
+                                    echo "</tr>";
+                                }
+                            } else {
+                                echo "<tr><td colspan='6'>Nenhum cão encontrado.</td></tr>";
+                            }
+
+                            $conexao->close();
+                            ?>
+                        </tbody>
+                    </table>

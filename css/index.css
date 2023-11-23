@@ -1,0 +1,440 @@
+/* =======================NAVBAR======================= */
+
+.logo {
+  
+  text-align: left;
+  margin-left: 20%;
+  color: honeydew;
+  font-size: 3rem;
+}
+/* colocar hove na .logo da navbar */
+.logo:hover {
+  color: #ce942a;
+}
+/* alterar cursor pointer no .logo */
+.logo {
+  cursor: pointer;
+}
+/* alterar cursor na img navbar */
+.navbar img {
+  cursor: pointer;
+}
+/* alterar cursorpointer  */
+.navbar-nav .nav-item .nav-link {
+  color: honeydew;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/* alterar tamanho da fonte .logo */
+.logo {
+  font-size: 2rem;
+}
+
+/* diminuir tamanho da fonte das tag <a> da navbar */
+.navbar-nav .nav-item .nav-link {
+  font-size: 1rem;
+}
+
+
+/* hober verde nas tag <a> da navbar */
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ce942a;
+}
+/* hover no botão da navbar */
+.navbar-nav .btn:hover {
+  background-color: #44300a;
+  opacity: 0.8;
+}
+.navbar-brand {
+  position: absolute;
+  width: 150x;
+  height: 150px;
+  left: 0;
+    top: 0;
+
+}
+  footer {
+    width: 100%;
+    color: honeydew;
+}
+
+
+/* btn hover */
+
+.btn:hover {
+  background-color: #2e2e2ee5;
+  opacity: 0.8;
+}
+
+
+/* =========================BODY==================== */
+/* Header/showcase */
+#showcase {
+  height: 100vh;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background: url('/img/background.png') no-repeat center center/cover;
+
+  /* Overlay  */
+  background-color: rgba(0, 0, 0, 0.26);
+  background-blend-mode: color;
+}
+.container{
+  width: 100%;
+  
+}
+#showcase-container {
+  text-align: center;
+  width: 60%;
+}
+#showcase-container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+#showcase-container p {
+  font-size: 1.8rem;
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+
+/* ===================CARROSSEL===================== */
+/* formatar a div class headline background da cor da nav*/
+.headline {
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  /* background dark */
+  background-color: #414349;
+  
+  color: honeydew;
+  font-size: 4rem;
+}
+.ptrabalho{
+  text-align: center;
+  padding: 4rem;
+  margin-bottom: 2rem;
+  /* background dark */
+  background-color: #414349;
+  font-size: 1.3rem;
+  
+  color: honeydew;
+}
+/* formatar a section */
+section {
+  padding: 4rem 0;
+  background-color: #bbb5b5;
+}
+
+/* diminuir altura e largura das imgs do carrossel */
+
+/* alterar vieweportheghts da img */
+
+
+.carousel-inner img {
+  width: 70vw;
+  height: 70vh;
+}
+
+/* ====================testmonials================ */
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  /* background: #D9A13B; */
+  /* padding: 15px; */
+  /* margin: 15px 0; */
+  /* border-radius: 5px; */
+  /* border: solid 2px #b85805; */
+}
+/* #testimonials {
+  width: 100%;
+  background: #D9A13B;
+  color: #dbd9d9;
+  padding: 50px;
+} */
+/* #testimonials-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+} */
+
+.testimonial .testimonial-image {
+  height: 400px;
+  width: 580px;
+  border-radius: 10px; */
+  margin: 15px, 0;
+  /* border: solid 5px #b85805; */
+}
+
+/* ===================RODAPÉ===================== */
+
+footer img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  left:10%;
+  margin-right: auto;
+}
+/* #footer_content {
+    background-color: #835d18;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;    
+} */
+
+/* #footer_contacts h1 {
+    margin-bottom: 0.75rem;
+} */
+
+/* #footer_social_media {
+    display: flex;
+    gap:2rem;
+    margin-top: 1.5rem;
+} */
+
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: blanchedalmond;
+  border-radius: 50%;
+  transition: all 0.4s;
+  font-size: 2rem; /* Tamanho dos ícones */
+  margin-right: 0.5rem; /* Espaçamento entre os ícones */
+  background-color: transparent; /* Cor de fundo transparente */
+  text-decoration: none; /* Remova a decoração do link */
+}
+.footer-link i {
+  position: relative;
+  top: -0.3rem;
+  left: -0.2rem;
+}
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: blanchedalmond;
+  border-radius: 50%;
+  transition: all 0.4s;
+  font-size: 2.5rem;
+}
+.footer-link {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: blanchedalmond;
+  border-radius: 50%;
+  transition: all 0.4s;
+  font-size: 2rem; /* Tamanho dos ícones */
+  margin-right: 0.5rem; /* Espaçamento entre os ícones */
+  background-color: transparent; /* Cor de fundo transparente */
+  text-decoration: none; /* Remova a decoração do link */
+  justify-content: center; /* Alinhe o conteúdo horizontalmente */
+}
+.footer-social-media i {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+}
+
+
+#footer_social_media .footer-link:hover {
+  opacity: 0.8;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+#facebook {
+  background-color: #4267b3;
+  /* background-color: transparent; */
+}
+#whatsapp {
+  background-color: #25d366;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: aliceblue;
+    transition: all 0.4s;
+}
+ 
+.footer-list .footer-link:hover {
+    color: #ff9807;
+
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#footer_subscribe p {
+    color: rgb(253, 245, 245);
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: rgb(212, 207, 207);
+    border-radius: 4px;
+}
+#input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+#input_group button {
+    background-color: #ce942a;
+    border: none;
+    color: rgb(241, 236, 236);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+#input_group button:hover {
+    background-color: #44300a;
+    opacity: 0.8;
+}
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: #44300a;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+#logos img{
+    display: flex;
+    height: 180px;
+    width: 180px;  
+}
+
+
+
+/* ===================MEDIA QUERIES===================== */
+
+@media (max-width: 997px) {
+  .navbar-brand {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 10%;
+    top: 10;
+    /* esconder logo */
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+
+  /* esconder img da navbar */
+  .navbar img {
+    display: none;
+  }
+  
+  footer {
+      text-align: center; /* Centraliza todo o conteúdo do footer */
+  }
+
+  .logo{
+      margin-left: 30%;
+      font-size: 2rem;
+  }
+
+  /* resposividade do carrossel para dispositivos mobile */
+  .carousel-inner img {
+    width: auto;
+    height: 50vh;
+  }
+
+
+  #footer_content {
+    grid-template-columns: 1fr; /* Uma única coluna para dispositivos móveis */
+    text-align: center; /* Centraliza os itens em uma única coluna */
+}
+.footer-social-media {
+  justify-content: center; /* Centraliza os ícones sociais horizontalmente */
+}
+.footer-link {
+        margin-right: 0; /* Remova o espaçamento entre os ícones para dispositivos móveis */
+    }
+
+  #footer_contacts {
+      margin-bottom: 2rem; /* Espaçamento inferior */
+}
+
+#logos {
+  display: flex;
+  justify-content: center; /* Centraliza as logos horizontalmente */
+}
+
+@media screen and (max-width: 768px) {
+  /* Ajustar a largura do contêiner */
+  #testimonials-container {
+    width: 100%;
+    text-align: center; /* Centralizar o conteúdo horizontalmente */
+  }
+
+  /* Centralizar imagens */
+  .testimonial-image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Adicionar margem ou espaço entre os depoimentos */
+  .testimonial {
+    margin-bottom: 20px;
+    text-align: center; /* Centralizar o texto horizontalmente */
+  }
+
+  /* Centralizar o texto abaixo da imagem */
+  .testimonial-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
+
+/* alinhar ao centro as logos do footer */
+  
+  
+
+  .footer-social-media {
+      justify-content: center; /* Centraliza os ícones sociais horizontalmente */
+  }
+
+  .footer-link {
+      margin-right: 0; /* Remova o espaçamento entre os ícones para dispositivos móveis */
+  }
+}
+
+
+
+
+
+

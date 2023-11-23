@@ -1,0 +1,431 @@
+/* ======================================================================== */
+.logo {
+    
+    text-align: left;
+    margin-left: 20%;
+    color: honeydew;
+    font-size: 3rem;
+  }
+  /* colocar hove na .logo da navbar */
+  .logo:hover {
+    color: #ce942a;
+  }
+  /* alterar cursor pointer no .logo */
+  .logo {
+    cursor: pointer;
+  }
+  /* alterar cursor na img navbar */
+  .navbar img {
+    cursor: pointer;
+  }
+  /* alterar cursorpointer  */
+  .navbar-nav .nav-item .nav-link {
+    color: honeydew;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  /* alterar tamanho da fonte .logo */
+  .logo {
+    font-size: 2rem;
+  }
+  
+  /* diminuir tamanho da fonte das tag <a> da navbar */
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+  }
+  
+  
+  /* hober verde nas tag <a> da navbar */
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #ce942a;
+  }
+  /* hover no botão da navbar */
+  .navbar-nav .btn:hover {
+    background-color: #44300a;
+    opacity: 0.8;
+  }
+  .navbar-brand {
+    position: absolute;
+    width: 150x;
+    height: 150px;
+    left: 0;
+      top: 0;
+  
+  }
+/* ========================================================================== */
+/* * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.btn-menu:hover{
+    color: rgb(77, 56, 5);
+}
+.btn1-menu:hover{
+    color: rgb(77, 56, 5);
+}
+.btn:hover {
+    cursor: pointer;
+    color: rgb(77, 56, 5);
+    background: #042670;
+}
+.headline {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+    color: #2e313a;
+}
+
+
+
+/*ShowCase */
+#showcase {
+    height: 150vh;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    color: #dbd9d9;
+    background: url('centro-de-zoonoses-pet.jpg') no-repeat center center/cover;
+
+    /* Overlay  */
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: color;
+}
+
+#showcase-container {
+    text-align: center;
+}
+#showcase-container h2 {
+    font-size: 2.5rem;
+}
+#showcase-container p {
+    font-size: 1.2rem;
+    padding-bottom: 30px;
+}
+
+/* Galery */
+
+#gallery {
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+}
+
+#gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.gallery-image {
+    display:inline-block;
+    width: 100%;
+    /* border-radius: 5px; */
+    border: solid 2px #535251;
+}
+
+
+
+ 
+  /* ===================RODAPÉ===================== */
+  footer {
+    position: static;
+    bottom: 0;
+    width: 100%;
+  }
+  footer img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    left:10%;
+    margin-right: auto;
+  }
+  
+  
+  .footer-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: blanchedalmond;
+    border-radius: 50%;
+    transition: all 0.4s;
+    font-size: 2rem; /* Tamanho dos ícones */
+    margin-right: 0.5rem; /* Espaçamento entre os ícones */
+    background-color: transparent; /* Cor de fundo transparente */
+    text-decoration: none; /* Remova a decoração do link */
+  }
+  .footer-link i {
+    position: relative;
+    top: -0.3rem;
+    left: -0.2rem;
+  }
+  
+  #footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: blanchedalmond;
+    border-radius: 50%;
+    transition: all 0.4s;
+    font-size: 2.5rem;
+  }
+  .footer-link {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: blanchedalmond;
+    border-radius: 50%;
+    transition: all 0.4s;
+    font-size: 2rem; /* Tamanho dos ícones */
+    margin-right: 0.5rem; /* Espaçamento entre os ícones */
+    background-color: transparent; /* Cor de fundo transparente */
+    text-decoration: none; /* Remova a decoração do link */
+    justify-content: center; /* Alinhe o conteúdo horizontalmente */
+  }
+  .footer-social-media i {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+  }
+  
+  
+  #footer_social_media .footer-link:hover {
+    opacity: 0.8;
+  }
+  
+  #instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+  }
+  #facebook {
+    background-color: #4267b3;
+    /* background-color: transparent; */
+  }
+  #whatsapp {
+    background-color: #25d366;
+  }
+  .footer-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      list-style: none;
+  }
+  
+  .footer-list .footer-link {
+      color: aliceblue;
+      transition: all 0.4s;
+  }
+   
+  .footer-list .footer-link:hover {
+      color: #ff9807;
+  
+  }
+  
+  #footer_subscribe {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+  #footer_subscribe p {
+      color: rgb(253, 245, 245);
+  }
+  
+  #input_group {
+      display: flex;
+      align-items: center;
+      background-color: rgb(212, 207, 207);
+      border-radius: 4px;
+  }
+  #input_group input {
+      all: unset;
+      padding: 0.75rem;
+      width: 100%;
+  }
+  #input_group button {
+      background-color: #ce942a;
+      border: none;
+      color: rgb(241, 236, 236);
+      padding: 0px 1.25rem;
+      font-size: 1.125rem;
+      height: 100%;
+      border-radius: 0px 4px 4px 0px;
+      cursor: pointer;
+  }
+  #input_group button:hover {
+      background-color: #44300a;
+      opacity: 0.8;
+  }
+  #footer_copyright {
+      display: flex;
+      justify-content: center;
+      background-color: #44300a;
+      font-size: 0.9rem;
+      padding: 1.5rem;
+      font-weight: 100;
+  }
+  #logos img{
+      display: flex;
+      height: 180px;
+      width: 180px;  
+  }
+  
+  
+  
+  /* ===================MEDIA QUERIES===================== */
+  
+  @media (max-width: 997px) {
+    .navbar-brand {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      left: 10%;
+      top: 10;
+      /* esconder logo */
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+  
+    /* esconder img da navbar */
+    .navbar img {
+      display: none;
+    }
+    
+    footer {
+        text-align: center; /* Centraliza todo o conteúdo do footer */
+        
+    }
+  
+    .logo{
+        margin-left: 30%;
+        font-size: 2rem;
+    }
+  
+    /* resposividade do carrossel para dispositivos mobile */
+    .carousel-inner img {
+      width: auto;
+      height: 50vh;
+    }
+  
+  
+    #footer_content {
+      grid-template-columns: 1fr; /* Uma única coluna para dispositivos móveis */
+      text-align: center; /* Centraliza os itens em uma única coluna */
+  }
+  .footer-social-media {
+    justify-content: center; /* Centraliza os ícones sociais horizontalmente */
+  }
+  .footer-link {
+          margin-right: 0; /* Remova o espaçamento entre os ícones para dispositivos móveis */
+      }
+  
+    #footer_contacts {
+        margin-bottom: 2rem; /* Espaçamento inferior */
+  }
+  
+  #logos {
+    display: flex;
+    justify-content: center; /* Centraliza as logos horizontalmente */
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Ajustar a largura do contêiner */
+    #testimonials-container {
+      width: 100%;
+      text-align: center; /* Centralizar o conteúdo horizontalmente */
+    }
+  
+    /* Centralizar imagens */
+    .testimonial-image {
+      display: block;
+      margin: 0 auto;
+    }
+  
+    /* Adicionar margem ou espaço entre os depoimentos */
+    .testimonial {
+      margin-bottom: 20px;
+      text-align: center; /* Centralizar o texto horizontalmente */
+    }
+  
+    /* Centralizar o texto abaixo da imagem */
+    .testimonial-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  
+  
+  
+  
+  /* alinhar ao centro as logos do footer */
+    
+    
+  
+    .footer-social-media {
+        justify-content: center; /* Centraliza os ícones sociais horizontalmente */
+    }
+  
+    .footer-link {
+        margin-right: 0; /* Remova o espaçamento entre os ícones para dispositivos móveis */
+    }
+  }
+  
+  
+  
+  
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 2fr);
+        gap: 2rem;
+        margin-top: 100px;
+    }
+    .about-us{
+        flex-direction: column;
+    }
+    .about-us img{
+        flex: 0 100%;
+        max-width: 100%;
+    }
+    .content{
+        flex: 0 100%;;
+        max-width: 100%;
+        padding: 15px;
+        margin-top: auto;
+    }
+    #showcase{
+        height: max-content;
+
+    }
+ }
+ @media screen and (max-width: 427px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+        margin-top: 30px;
+    }
+ }
