@@ -78,7 +78,7 @@
           <input type="text" class="form-control" id="name" name="name" placeholder="Informe seu nome" required>
         </div>
         <div class="mb-3">
-          <label for="birthdate" class="form-label">Data Nascimento</label>
+          <label for="birthdate" class="form-label">Data de Nascimento</label>
           <input type="date" class="form-control" id="birthdate" name="birthdate" required>
         </div>
         <div class="mb-3">
@@ -92,12 +92,44 @@
             required>
         </div>
         <div class="mb-3">
-          <label for="state" class="form-label">Estado</label>
-          <input type="text" class="form-control" id="state" name="state" placeholder="Informe o estado" required>
+                   <span>Estado :</span>
+                    <select class="form-control" id="validationDefault04" required>
+                      <option selected disabled value="">Escolha</option>
+                      <option value="AC">Acre</option>
+                      <option value="AL">Alagoas</option>
+                      <option value="AP">Amapá</option>
+                      <option value="AM">Amazonas</option>
+                      <option value="BA">Bahia</option>
+                      <option value="CE">Ceará</option>
+                      <option value="DF">Distrito Federal</option>
+                      <option value="ES">Espírito Santo</option>
+                      <option value="GO">Goiás</option>
+                      <option value="MA">Maranhão</option>
+                      <option value="MT">Mato Grosso</option>
+                      <option value="MS">Mato Grosso do Sul</option>
+                      <option value="MG">Minas Gerais</option>
+                      <option value="PA">Pará</option>
+                      <option value="PB">Paraíba</option>
+                      <option value="PR">Paraná</option>
+                      <option value="PE">Pernambuco</option>
+                      <option value="PI">Piauí</option>
+                      <option value="RJ">Rio de Janeiro</option>
+                      <option value="RN">Rio Grande do Norte</option>
+                      <option value="RS">Rio Grande do Sul</option>
+                      <option value="RO">Rondônia</option>
+                      <option value="RR">Roraima</option>
+                      <option value="SC">Santa Catarina</option>
+                      <option value="SP">São Paulo</option>
+                      <option value="SE">Sergipe</option>
+                      <option value="TO">Tocantins</option>
+                      <option value="EX">Estrangeiro</option>
+                    </select>
+                  </div>
+                  <div class="inputBox">
         </div>
         <div class="mb-3">
           <label for="phone" class="form-label">Celular</label>
-          <input type="tel" class="form-control" id="phone" name="phone" placeholder="(99) 99999-9999" required
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="(18) 99787-8999" required
             oninput="mascaraCelular(this)">
         </div>
         <div class="mb-3">
@@ -106,17 +138,13 @@
             placeholder="Informe seu melhor e-mail de contato" required>
         </div>
         <div class="mb-3">
-          <label for="password" class="form-label">Senha</label>
-          <input type="password" class="form-control" id="password" name="password" required>
-        </div>
-        <div class="mb-3">
           <label for="comments" class="form-label">Conte-nos mais...</label>
           <textarea class="form-control" id="comments" name="comments" rows="5"
             placeholder="Conte para nós por qual motivo você quer se tornar um voluntário..."></textarea>
         </div>
         <div class="btn-container">
           <button class="btn btn-primary" type="submit">Enviar</button>
-          <button class="btn btn-outline-secondary" type="reset">Limpar</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="reset" style="border-color: rgb(240, 50, 16); color: rgb(37, 25, 25); background-color: rgb(230, 110, 54);">Limpar</button>
         </div>
       </form>
     </div>
@@ -130,13 +158,13 @@
           <p>Vidas Animais importam!</p>
           <!-- Mova os ícones abaixo do parágrafo e ajuste o alinhamento -->
           <div class="footer-social-media d-flex justify-content-space-between">
-            <a href="#" class="footer-link" id="instagram">
+            <a href="https://www.instagram.com/" target="_blank" class="footer-link" id="instagram">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="#" class="footer-link" id="facebook">
+            <a href="https://www.facebook.com/" target="_blank" class="footer-link" id="facebook">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#" class="footer-link" id="whatsapp">
+            <a href="https://www.whatsapp.com/" target="_blank" class="footer-link" id="whatsapp">
               <i class="fab fa-whatsapp"></i>
             </a>
           </div>

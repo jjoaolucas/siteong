@@ -16,9 +16,6 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/donate.css">
   <title>ONG | AUMIGOS</title>
-  <script>
-    alert('Para a realização de doações de bens materiais, entre em contato com a ONG através do e-mail:  doacao@aumigos.com.br ou pelo telefone:  (18) 99999-9999.     Muito Obrigdo!');
-  </script>
   <script src="js/validarForm.js"></script>
 </head>
 <body>
@@ -68,6 +65,9 @@
 
 
         <div class="col-md-4">
+          <h1 class="display-6 mt-5">Doação de bens <span style="color: rgb(136, 72, 46);">materiais</span></h1>
+            <p class="lead">Para a realização de doações de bens materiais, entre em contato com a ONG através do e-mail:  
+              doacao@aumigos.com.br ou pelo telefone:  (18) 99854-5576. Muito Obrigado!</p>
           <h1 class="display-6 mt-5">Doe para a ONG Aumigos</h1>
           <p class="lead">A ONG Aumigos é uma organização sem fins lucrativos que tem como objetivo ajudar animais
             abandonados e maltratados.</p>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="inputBox">
                   <span>Cidade :</span>
-                  <input class="form-control" type="text" placeholder="São Paulo" id="cidade" required
+                  <input class="form-control" type="text" placeholder="Presidente Prudente" id="cidade" required
                     pattern="^[a-zA-Z\u00C0-\u00FF\s]+$" title="Insira uma cidade válida.">
                 </div>
                 <div class="flex">
@@ -163,13 +163,13 @@
                 </div>
                 <div class="inputBox">
                   <span>Cpf :</span>
-                  <input class="form-control" type="text" placeholder="123.456.789-00" maxlength="14" id="cpf" oninput="mascaraCPF(this)">
+                  <input class="form-control" type="text" placeholder="123.456.789-00" maxlength="14" id="cpf" oninput="mascaraCPF(this)" onblur="validarCPF(this)">
                 </div>
 
                 <div class="flex">
                   <div class="inputBox">
                     <span>Ano Expiração :</span>
-                    <input class="form-control" type="number" placeholder="2023">
+                    <input class="form-control" type="number" placeholder="2023" id="ano">
                   </div>
                   <div class="inputBox">
                     <span>Mês Expiração :</span>
@@ -207,13 +207,13 @@
           <p>Vidas Animais importam!</p>
           <!-- Mova os ícones abaixo do parágrafo e ajuste o alinhamento -->
           <div class="footer-social-media d-flex justify-content-space-between">
-            <a href="#" class="footer-link" id="instagram">
+            <a href="https://www.instagram.com/" target="_blank" class="footer-link" id="instagram">
               <i class="fab fa-instagram"></i>
             </a>
-            <a href="#" class="footer-link" id="facebook">
+            <a href="https://www.facebook.com/" target="_blank" class="footer-link" id="facebook">
               <i class="fab fa-facebook-f"></i>
             </a>
-            <a href="#" class="footer-link" id="whatsapp">
+            <a href="https://www.whatsapp.com/" target="_blank" class="footer-link" id="whatsapp">
               <i class="fab fa-whatsapp"></i>
             </a>
           </div>

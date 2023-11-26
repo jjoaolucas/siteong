@@ -97,7 +97,7 @@
                                 <input type="text" id="newNome" class="form-control" required>
                                 <br>
                                 <label for="newTelefone">Telefone:</label>
-                                <input type="text" id="newTelefone" class="form-control" required>
+                                <input type="number" id="newTelefone" class="form-control" required>
                                 <br>
                                 <label for="newCidade">Cidade:</label>
                                 <input type="text" id="newCidade" class="form-control" required>
@@ -139,11 +139,11 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script>
             var data = [
-                { id: 1, nome: "Leandro Gasque", telefone: "18 98105-3846", cidade: "Presidente Prudente" },
-                { id: 2, nome: "Alex Otaverson", telefone: "18 98155-6532", cidade: "Presidente Prudente" },
-                { id: 3, nome: "Breno Oliveira", telefone: "18 98564-6547", cidade: "Presidente Prudente" },
-                { id: 4, nome: "João Lucas", telefone: "18 97589-4563", cidade: "Presidente Prudente" },
-                { id: 5, nome: "Marcelo Marajon", telefone: "18 96585-1212", cidade: "Presidente Prudente" }
+                { id: 55789, nome: "Leandro Gasque", telefone: "18 98105-3846", cidade: "Presidente Prudente" },
+                { id: 10005, nome: "Alex Otaverson", telefone: "18 98155-6532", cidade: "Presidente Prudente" },
+                { id: 67888, nome: "Breno Oliveira", telefone: "18 98564-6547", cidade: "Presidente Prudente" },
+                { id: 43674, nome: "João Lucas", telefone: "18 97589-4563", cidade: "Presidente Prudente" },
+                { id: 91274, nome: "Marcelo Marajon", telefone: "18 96585-1212", cidade: "Presidente Prudente" }
             ];
     
             function renderTable() {
@@ -162,6 +162,10 @@
                     tbody.innerHTML += row;
                 });
             }
+
+            function gerarNumeroAleatorio(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
     
             function addNewItem() {
                 var newNome = document.getElementById('newNome').value;
@@ -170,7 +174,7 @@
     
                 // Simulação de criação de um novo item
                 var newItem = {
-                    id: data.length + 1, // Ajustar conforme necessário
+                    id: gerarNumeroAleatorio(10000, 99999), // Ajustar conforme necessário
                     nome: newNome,
                     telefone: newTelefone,
                     cidade: newCidade

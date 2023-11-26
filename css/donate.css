@@ -35,6 +35,8 @@ a {
   .lead{
     font-size: 1.3rem;
     text-align: left;
+    color: #0e0b0b;
+    font-weight: 400;
     margin-top: 20px;
     padding-bottom: 30px;
     letter-spacing: 2px;
